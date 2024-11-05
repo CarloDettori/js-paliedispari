@@ -46,3 +46,21 @@ function isPalindrom() {
         console.log("le non parole sono palindrome")
     }
 }
+
+function winner() {
+    let parDisCont = (numUser + numPc) % 2;
+    let a = "";
+    if (parDisCont == 0) {
+        a = "pari";
+    } else {
+        a = "dispari";
+    }
+    console.log(`E' uscito ${a}`)
+    if (a == parDis) {
+        console.log("Congratulazioni!, hai vinto!")
+    } else {
+        console.log("Ritenta, sarai più fortunato")
+    }
+
+
+}
