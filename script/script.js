@@ -27,14 +27,13 @@ while (parDis != "pari" && parDis != "dispari") {
     parDis = prompt("scrivi pari o dispari");
 }
 let numUser = parseInt(prompt("scegli un numero da 1 a 10"));
-while (typeof numUser != typeof b || numUser > 10) {
-    let b = 1;
+while (isNaN(numUser) || numUser > 10) {
     console.log("non hai scritto un numero valido")
-    parDis = prompt("scegli un numero da 1 a 10");
+    numUser = prompt("scegli un numero da 1 a 10");
 }
 let numPc = generaNumeroRandom(1, 10);
 let sommaCont = (numUser + numPc) % 2;
-let somma = numUser + numPc;
+let somma = parseInt(numUser) + parseInt(numPc);
 console.log(`hai scelto ${parDis}`);
 console.log(`il tuo numero è ${numUser}`);
 console.log(`il numero del computer è ${numPc}`);
