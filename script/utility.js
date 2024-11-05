@@ -32,3 +32,17 @@ function pariOdispari(num) {
 function isEven(num) {
     return num % 2 === 0;
 }
+
+function isPalindrom() {
+    for (let i = word.length - 1; i >= 0; i--) {
+        palindrom = palindrom + word[i];
+    }
+    console.log(word);
+    console.log(palindrom);
+
+    if (word == palindrom) {
+        console.log("le parole sono palindrome")
+    } else {
+        console.log("le non parole sono palindrome")
+    }
+}
